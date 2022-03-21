@@ -1,0 +1,2 @@
+# AsyncDNSServer_Teensy41
+Fully Asynchronous DNS Server Library for Teensy 4.1 using QNEthernet. This library is one of the current or future Async libraries to support Teensy 4.1 using QNEthernet, such as Teensy41_AsyncTCP, AsyncHTTPRequest_Teensy41, AsyncHTTPSRequest_Teensy41, AsyncMQTT_Generic, AsyncWebServer_Teensy41, AsyncDNSServer_Teensy41, AsyncDNSServer_Teensy41, AsyncTCP_SSL_Teensy41, etc.
