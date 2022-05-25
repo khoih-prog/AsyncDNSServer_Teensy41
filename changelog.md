@@ -20,6 +20,10 @@
 
 ## Changelog
 
+### Releases v1.1.2-1
+
+1. Fix library dependency
+
 ### Releases v1.1.1
 
 1. Initial porting and coding for **Teensy 4.1 using built-in QNEthernet**

@@ -86,7 +86,7 @@ to apply the better and faster **asynchronous** feature into **Teensy 4.1 using 
 
  1. [`Arduino IDE 1.8.19+` for Arduino](https://github.com/arduino/Arduino). [![GitHub release](https://img.shields.io/github/release/arduino/Arduino.svg)](https://github.com/arduino/Arduino/releases/latest)
  2. [`Teensy core v1.56+`](https://www.pjrc.com/teensy/td_download.html)
- 3. [`QNEthernet Library version v0.13.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
+ 3. [`QNEthernet Library version v0.14.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
  4. [`AsyncUDP_Teensy41 library v1.2.1+`](https://github.com/khoih-prog/AsyncUDP_Teensy41). To install. check [![arduino-library-badge](https://www.ardu-badge.com/badge/AsyncUDP_Teensy41.svg?)](https://www.ardu-badge.com/AsyncUDP_Teensy41).
  
 ---
