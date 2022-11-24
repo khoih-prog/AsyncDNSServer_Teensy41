@@ -1,17 +1,17 @@
 /****************************************************************************************************************************
   AsyncDNSServer_Teensy41_Debug.h
-   
+
   AsyncDNSServer_Teensy41 is a Async UDP library for the Teensy41 using built-in Ethernet and QNEThernet
-  
+
   Based on and modified from ESPAsyncUDP Library (https://github.com/me-no-dev/ESPAsyncUDP)
   Built by Khoi Hoang https://github.com/khoih-prog/AsyncDNSServer_Teensy41
-  
+
   Version: 1.1.1
-  
+
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.1.1   K Hoang      19/03/2022 Initial coding for Teensy 4.1 using built-in QNEthernet.
-                                  Bump up version to v1.1.1 to sync with AsyncDNSServer_STM32 v1.1.1  
+                                  Bump up version to v1.1.1 to sync with AsyncDNSServer_STM32 v1.1.1
   *****************************************************************************************************************************/
 
 #pragma once

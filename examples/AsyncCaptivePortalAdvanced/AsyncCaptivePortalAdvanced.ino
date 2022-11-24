@@ -2,9 +2,9 @@
   AsyncCaptivePortalAdvanced.ino
 
   For Teensy41 with QNEthernet
-  
+
   AsyncDNSServer_Teensy41 is a Async UDP library for the Teensy41 using built-in Ethernet and QNEThernet
-  
+
   Based on and modified from ESPAsyncUDP Library (https://github.com/me-no-dev/ESPAsyncUDP)
   Built by Khoi Hoang https://github.com/khoih-prog/AsyncDNSServer_Teensy41
  *****************************************************************************************************************************/
@@ -88,7 +88,7 @@ void handleRoot(AsyncWebServerRequest * request)
   request->send(response);
 }
 
-// Redirect to captive portal if we got a request for another domain. 
+// Redirect to captive portal if we got a request for another domain.
 // Return true in that case so the page handler do not try to handle the request again.
 bool captivePortal(AsyncWebServerRequest * request)
 {
@@ -144,20 +144,24 @@ void handleNotFound(AsyncWebServerRequest * request)
 void setup()
 {
   Serial.begin(115200);
+
   while (!Serial);
 
   delay(1000);
 
-  Serial.print("\nStart AsyncCaptivePortalAdvanced on "); Serial.println(BOARD_NAME);
+  Serial.print("\nStart AsyncCaptivePortalAdvanced on ");
+  Serial.println(BOARD_NAME);
   Serial.println(ASYNC_DNS_SERVER_TEENSY41_VERSION);
 
 #if defined(ASYNC_UDP_TEENSY41_VERSION_MIN)
+
   if (ASYNC_UDP_TEENSY41_VERSION_INT < ASYNC_UDP_TEENSY41_VERSION_MIN)
   {
     Serial.print("Warning. Must use this example on Version equal or later than : ");
     Serial.println(ASYNC_UDP_TEENSY41_VERSION_MIN_TARGET);
   }
-#endif  
+
+#endif
 
   delay(500);
 
@@ -190,17 +194,18 @@ void setup()
   else
   {
     apIP = Ethernet.localIP();
-    
-    Serial.print(F("Connected! IP address:")); Serial.println(apIP);
+
+    Serial.print(F("Connected! IP address:"));
+    Serial.println(apIP);
   }
 
 #if USING_DHCP
   delay(1000);
-#else  
+#else
   delay(2000);
 #endif
 
-  
+
 
   // modify TTL associated  with the domain name (in seconds)
   // default is 60 seconds
