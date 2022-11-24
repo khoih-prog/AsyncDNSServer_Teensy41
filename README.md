@@ -1,4 +1,4 @@
-# AsyncDNSServer_Teensy41
+# AsyncDNSServer_Teensy41 Library
 
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/AsyncDNSServer_Teensy41.svg?)](https://www.ardu-badge.com/AsyncDNSServer_Teensy41)
@@ -6,8 +6,11 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#Contributing)
 [![GitHub issues](https://img.shields.io/github/issues/khoih-prog/AsyncDNSServer_Teensy41.svg)](http://github.com/khoih-prog/AsyncDNSServer_Teensy41/issues)
 
+
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Donate to my libraries using BuyMeACoffee" style="height: 50px !important;width: 181px !important;" ></a>
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg?logo=buy-me-a-coffee&logoColor=FFDD00" style="height: 20px !important;width: 200px !important;" ></a>
+<a href="https://profile-counter.glitch.me/khoih-prog/count.svg" title="Total khoih-prog Visitor count"><img src="https://profile-counter.glitch.me/khoih-prog/count.svg" style="height: 30px;width: 200px;"></a>
+<a href="https://profile-counter.glitch.me/khoih-prog-AsyncDNSServer_Teensy41/count.svg" title="AsyncDNSServer_Teensy41 Visitor count"><img src="https://profile-counter.glitch.me/khoih-prog-AsyncDNSServer_Teensy41/count.svg" style="height: 30px;width: 200px;"></a>
 
 ---
 ---
@@ -85,8 +88,8 @@ to apply the better and faster **asynchronous** feature into **Teensy 4.1 using 
 ## Prerequisites
 
  1. [`Arduino IDE 1.8.19+` for Arduino](https://github.com/arduino/Arduino). [![GitHub release](https://img.shields.io/github/release/arduino/Arduino.svg)](https://github.com/arduino/Arduino/releases/latest)
- 2. [`Teensy core v1.56+`](https://www.pjrc.com/teensy/td_download.html)
- 3. [`QNEthernet Library version v0.14.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
+ 2. [`Teensy core v1.57+`](https://www.pjrc.com/teensy/td_download.html)
+ 3. [`QNEthernet Library version v0.16.0+`](https://github.com/ssilverman/QNEthernet) for Teensy 4.1 built-in Ethernet.
  4. [`AsyncUDP_Teensy41 library v1.2.1+`](https://github.com/khoih-prog/AsyncUDP_Teensy41). To install. check [![arduino-library-badge](https://www.ardu-badge.com/badge/AsyncUDP_Teensy41.svg?)](https://www.ardu-badge.com/AsyncUDP_Teensy41).
  
 ---
@@ -147,14 +150,14 @@ The current library implementation, using `xyz-Impl.h` instead of standard `xyz.
 
 You can include this `.hpp` file
 
-```
+```cpp
 // Can be included as many times as necessary, without `Multiple Definitions` Linker Error
 #include "AsyncDNSServer_Teensy41.hpp"         //https://github.com/khoih-prog/AsyncDNSServer_Teensy41
 ```
 
 in many files. But be sure to use the following `.h` file **in just 1 `.h`, `.cpp` or `.ino` file**, which must **not be included in any other file**, to avoid `Multiple Definitions` Linker Error
 
-```
+```cpp
 // To be included only in main(), .ino with setup() to avoid `Multiple Definitions` Linker Error
 #include "AsyncDNSServer_Teensy41.h"           //https://github.com/khoih-prog/AsyncDNSServer_Teensy41
 ```
@@ -228,12 +231,12 @@ void loop()
 #### 1. File [AsyncDNSServer.ino](examples/AsyncDNSServer/AsyncDNSServer.ino)
 
 
-https://github.com/khoih-prog/AsyncDNSServer_Teensy41/blob/2ca8c4f8d45ff01f939ed210f02c60d6e94321fb/examples/AsyncDNSServer/AsyncDNSServer.ino#L12-L115
+https://github.com/khoih-prog/AsyncDNSServer_Teensy41/blob/4a4601931449b6509cae3e9aa47caec94d2e1130/examples/AsyncDNSServer/AsyncDNSServer.ino#L12-L120
 
 
 #### 2. File [defines.h](examples/AsyncDNSServer/defines.h)
 
-https://github.com/khoih-prog/AsyncDNSServer_Teensy41/blob/2ca8c4f8d45ff01f939ed210f02c60d6e94321fb/examples/AsyncDNSServer/defines.h#L12-L45
+https://github.com/khoih-prog/AsyncDNSServer_Teensy41/blob/4a4601931449b6509cae3e9aa47caec94d2e1130/examples/AsyncDNSServer/defines.h#L12-L45
 
 
 ---
@@ -289,6 +292,8 @@ Submit issues to: [AsyncDNSServer_Teensy41 issues](https://github.com/khoih-prog
  1. Initial porting and coding for **Teensy 4.1 using built-in QNEthernet**
  2. Add more examples.
  3. Add debugging features.
+ 4. Add astyle using `allman` style. Restyle the library
+ 
  
 ---
 ---
@@ -324,6 +329,6 @@ If you want to contribute to this project:
 
 ## Copyright
 
-- Copyright 2016- Develo
-- Copyright 2022- Khoi Hoang
+- Copyright (c) 2016- Develo
+- Copyright (c) 2022- Khoi Hoang
 
